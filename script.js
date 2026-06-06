@@ -3,6 +3,7 @@ function transformingData(){
     return new Promise((resolve)=>{
         setTimeout(()=>{
             const number = Number(document.getElementById("ip").value);
+            document.getElementById("output").innerText="Result: "+ number;
             resolve(number)
         }, 2000)
     })
