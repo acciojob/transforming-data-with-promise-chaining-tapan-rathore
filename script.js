@@ -12,7 +12,7 @@ function transformingData(){
                 const multiNum = number*2;
                 document.getElementById("output").innerText="Result: "+ multiNum;
                 resolve(multiNum);
-            },2000)
+            },1000)
         })
     })
     .then((multiNum)=>{
@@ -37,7 +37,7 @@ function transformingData(){
         return new Promise((resolve)=>{
             setTimeout(()=>{
                 const finalNum = divNum+10;
-                document.getElementById("output").innerText="Result: "+ finalNum;
+                document.getElementById("output").innerText="Final Result: "+ finalNum;
                 resolve(finalNum)
             },1000)
         })
